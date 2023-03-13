@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import { validateRequest } from "../infrastructure/middleware/validate-request";
-import {CreateItemDto} from "../infrastructure/api/dto/create-item.dto";
+import { CreateItemDto } from "../infrastructure/api/dto/create-item.dto";
 
 export const itemsRouter = express.Router();
 
