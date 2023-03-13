@@ -1,5 +1,5 @@
 # Express App TS
-Just a simple express app sandbow with TS
+Just a simple express app sandbox with TS
 
 # Available scripts
 
