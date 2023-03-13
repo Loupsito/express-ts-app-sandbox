@@ -9,6 +9,7 @@ import { Container } from "typedi";
 
 const app = express();
 
+// https://github.com/typestack/class-validator/issues/928
 useClassValidatorContainer(Container, {
   fallback: true,
   fallbackOnErrors: true,
