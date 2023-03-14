@@ -8,10 +8,10 @@ useContainer(Container);
 
 @Service()
 export class UserApi {
+  constructor(private readonly httpService: HttpService) {}
   async getUserDetails(user: { userId: number }): Promise<UserDetails> {
-    const httpService = Container.get(HttpService);
-    const result = await httpService.get(
-      "https://jsonplaceholder.typicode.com/todos/1"
+    const result = await this.httpService.get(
+      `https://jsonplaceholder.typicode.com/todos/${user.userId}`
     );
     return result.data;
   }
