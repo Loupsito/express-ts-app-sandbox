@@ -7,7 +7,7 @@ export class CreateItemDto {
 
   @IsNotEmpty()
   @IsNumber()
-  age: string;
+  age: number;
 
   @IsOptional()
   @IsNotEmpty()
