@@ -1,8 +1,8 @@
 import { Container } from "typedi";
 import { UserApi } from "./infrastructure/api/user.api";
 import { UserHelper } from "./domain/helper/user.helper";
-import { userRouter } from "./controller/user.controller";
-import { itemsRouter } from "./controller/item.controller";
+import { userRouter } from "./router/user.router";
+import { itemsRouter } from "./router/item.router";
 import express from "express";
 import { HttpService } from "./lib/http.service";
 
