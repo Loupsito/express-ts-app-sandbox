@@ -1,7 +1,5 @@
-import { Service } from "typedi";
 import axios, { AxiosResponse } from "axios";
 
-@Service()
 export class HttpService {
   async get(url: string): Promise<AxiosResponse> {
     return axios.get(url);

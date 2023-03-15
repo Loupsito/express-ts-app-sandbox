@@ -1,12 +1,7 @@
 import express, { Request, Response } from "express";
 import "reflect-metadata";
-import { Container } from "typedi";
-import { useContainer } from "class-validator";
-
 import { UserHelper } from "../domain/helper/user.helper";
 import { UserApi } from "../infrastructure/api/user.api";
-
-useContainer(Container);
 
 export function userRouter(userApi: UserApi, userHelper: UserHelper) {
   const router = express.Router();
